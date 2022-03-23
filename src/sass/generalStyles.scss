@@ -1,11 +1,21 @@
+@import "./mixins";
+@import "./header";
+@import "./articles";
+@import "./form";
+
 body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
 main {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  gap: 3.125rem; */
+  gap: 3.125rem;
   width: 95%;
   margin: auto;
+  margin-top: 3.125rem;
+}
+
+h2 {
+  @include heading-H2();
 }

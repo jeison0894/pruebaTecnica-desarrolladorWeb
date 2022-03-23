@@ -1,5 +1,4 @@
 import logoCompany from "../assets/img/logoCompany.svg"
-import "../sass/header.scss"
 
 const Header = () => {
   return (

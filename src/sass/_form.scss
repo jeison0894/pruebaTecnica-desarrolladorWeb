@@ -1,0 +1,33 @@
+@mixin flex($spacing, $BorderColor: 0, $BorderRadius: 0) {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing;
+  border: 1px solid $BorderColor;
+  border-radius: $BorderRadius;
+}
+
+.form {
+  @include flex(2rem, #696969);
+  padding: 1.5rem;
+
+  .formGroup {
+    @include flex(1rem);
+  }
+
+  .input {
+    padding: 1rem;
+    @include flex(1.5rem, #cacaca, 4px);
+
+    &--select {
+      @include flex(1.5rem, #696969, 4px);
+    }
+  }
+
+  button {
+    border: none;
+    padding: 1rem;
+    background-color: #f778b9;
+    color: white;
+    font-weight: 800;
+  }
+}

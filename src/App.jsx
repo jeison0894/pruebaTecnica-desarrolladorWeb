@@ -1,6 +1,7 @@
 import "./sass/generalStyles.scss"
 import Header from "./components/Header"
 import Articles from "./components/Articles"
+import Form from "./components/Form"
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Header />
       <main>
         <Articles />
+        <Form />
       </main>
     </>
   )

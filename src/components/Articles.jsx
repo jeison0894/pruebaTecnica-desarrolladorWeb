@@ -1,4 +1,3 @@
-import "../sass/articles.scss"
 import Article from "./Article"
 
 const Articles = () => {
