@@ -2,6 +2,7 @@
 @import "./header";
 @import "./articles";
 @import "./form";
+@import "./FAQ";
 
 body {
   font-family: "Source Sans Pro", sans-serif;
@@ -11,11 +12,14 @@ main {
   display: flex;
   flex-direction: column;
   gap: 3.125rem;
-  width: 95%;
+  width: 90%;
   margin: auto;
   margin-top: 3.125rem;
 }
 
-h2 {
+h2,
+summary {
   @include heading-H2();
 }
+
+

@@ -1,0 +1,38 @@
+.FAQ {
+  details {
+    padding: 1.3rem 0;
+    border-bottom: 1px dashed;
+    transition: 0.2s;
+
+    summary {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &::after {
+        content: "";
+        border-right: 0.3rem solid;
+        border-bottom: 0.3rem solid;
+        height: 0.3rem;
+        width: 0.3rem;
+        transform: rotate(45deg);
+        transition: 0.2s;
+      }
+    }
+
+    &[open] summary:after {
+      transform: rotate(225deg);
+    }
+  }
+  p {
+    font-family: "Merriweather";
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+  }
+}
