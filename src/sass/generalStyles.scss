@@ -4,6 +4,7 @@
 @import "./articles";
 @import "./form";
 @import "./FAQ";
+@import "./review";
 @import "./footer";
 
 body {
@@ -15,8 +16,7 @@ main {
   flex-direction: column;
   gap: 3.125rem;
   width: 90%;
-  margin: auto;
-  margin-top: 3.125rem;
+  margin: 3.125rem auto;
 }
 
 h2,

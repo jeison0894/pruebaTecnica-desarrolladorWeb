@@ -5,7 +5,7 @@
   letter-spacing: -0.02em;
 }
 
-@mixin text($Fontsize, $lineHeigth) {
+@mixin text($Fontsize, $lineHeigth:0) {
   font-family: "Merriweather";
   font-size: $Fontsize;
   line-height: $lineHeigth;
