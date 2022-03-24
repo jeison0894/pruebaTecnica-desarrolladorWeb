@@ -1,5 +1,6 @@
 @import "./mixins";
 @import "./header";
+@import "./hero";
 @import "./articles";
 @import "./form";
 @import "./FAQ";
@@ -21,5 +22,3 @@ h2,
 summary {
   @include heading-H2();
 }
-
-
