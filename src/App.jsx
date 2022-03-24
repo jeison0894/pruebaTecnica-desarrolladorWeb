@@ -5,7 +5,7 @@ import Form from "./components/Form"
 import FAQ from "./components/FAQ"
 import Hero from "./components/Hero"
 import Footer from "./components/Footer"
-import Reviews from "./components/Reviews"
+import Reviews from "./components/reviews/Reviews"
 
 const App = () => {
   return (

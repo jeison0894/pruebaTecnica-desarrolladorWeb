@@ -1,4 +1,4 @@
-import quoteIcon from '../assets/img/quoteIcon.svg'
+import quoteIcon from '../../assets/img/quoteIcon.svg'
 
 const Review = () => {
   return (

@@ -18,7 +18,7 @@
     padding: 1rem;
     @include flex(1.5rem, #cacaca, 4px);
 
-    &--select {
+    &.select {
       @include flex(1.5rem, #696969, 4px);
     }
   }
