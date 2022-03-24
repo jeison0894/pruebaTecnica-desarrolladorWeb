@@ -29,7 +29,6 @@ const Reviews = () => {
     let posicion = indexBtn
     let desplazamiento = posicion * -33.3
     wrapper.current.style.transform = `translateX(${desplazamiento}%)`
-
   }
 
   return (

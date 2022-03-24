@@ -1,5 +1,6 @@
 @import "./mixins";
 @import "./header";
+@import "./hamburguerMenu";
 @import "./hero";
 @import "./articles";
 @import "./form";
@@ -9,6 +10,8 @@
 @import "./footer";
 
 body {
+  position: relative;
+  margin: auto;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -22,5 +25,5 @@ main {
 
 h2,
 summary {
-  @include heading-H2();
+  @include heading-H2(22px, 26px);
 }

@@ -1,11 +1,12 @@
-@mixin heading-H2 {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 26px;
+@mixin heading-H2($fontSize, $lineHeigth: 0, $color: 0,$fontWeight:700) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeigth;
   letter-spacing: -0.02em;
+  color: $color;
 }
 
-@mixin text($Fontsize, $lineHeigth:0) {
+@mixin text($Fontsize, $lineHeigth: 0) {
   font-family: "Merriweather";
   font-size: $Fontsize;
   line-height: $lineHeigth;
