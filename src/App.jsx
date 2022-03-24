@@ -4,6 +4,7 @@ import Articles from "./components/Articles"
 import Form from "./components/Form"
 import FAQ from "./components/FAQ"
 import Hero from "./components/Hero"
+import Footer from "./components/Footer"
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Form />
         <FAQ />
       </main>
+        <Footer />
     </>
   )
 }

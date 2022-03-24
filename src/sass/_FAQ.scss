@@ -30,9 +30,6 @@
     }
   }
   p {
-    font-family: "Merriweather";
-    font-size: 16px;
-    line-height: 32px;
-    letter-spacing: 0.02em;
+    @include text(16px, 32px);
   }
 }

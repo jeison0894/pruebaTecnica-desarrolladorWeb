@@ -1,0 +1,11 @@
+footer {
+  background-color: #265e6c;
+  padding: 4rem 3rem;
+  text-align: center;
+  color: #fff;
+
+  p {
+    margin-top: 2rem;
+    @include text(14px, 20px);
+  }
+}
