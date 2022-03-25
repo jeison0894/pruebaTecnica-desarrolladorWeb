@@ -15,6 +15,7 @@
 
     &--select {
       @include inputStyles(1.5rem, #696969, 4px);
+      cursor: pointer;
     }
   }
 

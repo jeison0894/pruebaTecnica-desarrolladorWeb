@@ -6,9 +6,11 @@ const Newsletter = () => {
 
   return (
     <section className="newsletter">
-      <h2>Suscribete a nuestro newsletter</h2>
-      <p className="newsletter__text">Mantente al tanto del lanzamiento de nuevos articulos.</p>
-      <button className="newsletter__button" onClick={() => handleModal(true)}>Suscribirse a nuestro newsletter</button>
+      <div className="newsletter__container">
+        <h2>Suscribete a nuestro newsletter</h2>
+        <p className="newsletter__text">Mantente al tanto del lanzamiento de nuevos articulos.</p>
+        <button className="newsletter__button" onClick={() => handleModal(true)}>Suscribirse a nuestro newsletter</button>
+      </div>
     </section>
   );
 };

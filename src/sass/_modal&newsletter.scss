@@ -1,11 +1,20 @@
 // -----> Newsletter <-----
 
 .newsletter {
-  display: grid;
-  place-content: center;
-  padding: 4rem 2rem;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
   background-color: #e4eefd;
-  text-align: center;
+
+  &__container {
+    display: grid;
+    place-content: center;
+    width: 90%;
+    margin: auto;
+    padding: 4rem 0;
+    text-align: center;
+  }
 
   &__text {
     @include text(14px, 24px);
@@ -29,8 +38,9 @@
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   place-content: center;
-
+  
   &__info {
+    max-width: 500px;
     display: grid;
     gap: 1px;
     position: relative;

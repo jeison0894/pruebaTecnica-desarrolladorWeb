@@ -8,12 +8,13 @@
       transform: rotate(225deg);
     }
   }
-
+  
   &__summary {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 
     &::-webkit-details-marker {
       display: none;
@@ -32,7 +33,7 @@
 
   &__text {
     @include text(16px, 32px);
-  }   
+  }
 
   @include medium {
     width: 50%;
