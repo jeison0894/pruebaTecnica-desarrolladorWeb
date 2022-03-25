@@ -1,0 +1,42 @@
+.modalContainer {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  place-content: center;
+
+  article {
+    display: grid;
+    gap: 1px;
+    position: relative;
+    padding: 2rem;
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+
+    svg {
+      position: absolute;
+      width: 1rem;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+    h3 {
+      margin: 0;
+      @include heading-H2(22px, 26.4px);
+    }
+
+    p {
+      @include text(16px, 32px);
+    }
+
+    button {
+      @include button(#b378ff);
+    }
+  }
+}
+
+.openModal {
+  display: grid;
+}

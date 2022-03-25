@@ -7,11 +7,12 @@ import Hero from "./components/Hero"
 import Footer from "./components/Footer"
 import Reviews from "./components/reviews/Reviews"
 import HamburguerMenu from "./components/HamburguerMenu"
+import Modal from "./components/Modal"
 
 const App = () => {
   return (
     <>
-      <Header />
+      {/* <Header />
       <HamburguerMenu />
       <main>
         <Hero />
@@ -20,7 +21,8 @@ const App = () => {
         <FAQ />
         <Reviews />
       </main>
-      <Footer />
+      <Footer /> */}
+      <Modal />
     </>
   )
 }

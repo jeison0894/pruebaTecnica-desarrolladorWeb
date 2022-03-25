@@ -24,10 +24,6 @@
   }
 
   button {
-    border: none;
-    padding: 1rem;
-    background-color: #f778b9;
-    color: white;
-    font-weight: 800;
+    @include button(#f778b9);
   }
 }
