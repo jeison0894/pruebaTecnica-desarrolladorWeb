@@ -9,23 +9,21 @@ const Form = () => {
     <form className="form" onSubmit={handleSubmit}>
       <h2>Formulario de contacto</h2>
 
-      <div className="formGroup">
+      <div className="form__group">
         <label htmlFor="correo">Ingresa tu correo</label>
-        <input className="input" type="text" placeholder="Ingresa tu correo" name="correo" />
+        <input className="form__input" type="text" placeholder="Ingresa tu correo" name="correo" />
       </div>
 
-      <div className="formGroup">
+      <div className="form__group">
         <label htmlFor="select">Selecciona una opcion</label>
-        <select className="input select" name="select" id="select">
+        <select className="form__input form__input--select" name="select" id="select">
           <option >Opcion 1</option>
           <option >Opcion 2</option>
           <option >Opcion 3</option>
         </select>
       </div>
 
-      <button >Enviar solicitud</button>
-
-
+      <button className="form__button">Enviar solicitud</button>
     </form>
   )
 }

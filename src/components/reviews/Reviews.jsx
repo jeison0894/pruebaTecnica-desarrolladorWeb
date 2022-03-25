@@ -1,8 +1,8 @@
 import { useRef, useState } from "react"
-import BtnReview from "./BtnReview"
 import Review from "./Review"
+import BtnReview from "./BtnReview"
 
-const arrBotones = [
+const carrouselArrayButtons = [
   {
     id: 0,
     active: true
@@ -18,31 +18,29 @@ const arrBotones = [
 ]
 
 const Reviews = () => {
-  const wrapper = useRef()
-  const [listaBotonesSlider, setListaBotonesSlider] = useState(arrBotones)
+  const carrouselWrapper = useRef()
+  const [listBtns, setListBtns] = useState(carrouselArrayButtons)
 
   const handleBtnSlider = (indexBtn) => {
-
-    const botonActive = listaBotonesSlider.map(boton => ({ ...boton, active: boton.id === indexBtn ? true : false }))
-    setListaBotonesSlider(botonActive);
-
-    let posicion = indexBtn
-    let desplazamiento = posicion * -33.3
-    wrapper.current.style.transform = `translateX(${desplazamiento}%)`
+    const btnActive = listBtns.map(button => ({ ...button, active: button.id === indexBtn ? true : false }))
+    setListBtns(btnActive);
+    let position = indexBtn
+    let displacement = position * -33.3
+    carrouselWrapper.current.style.transform = `translateX(${displacement}%)`
   }
 
   return (
-    <div className="carrousel">
-      <div className="wrapper" ref={wrapper}>
+    <section className="carrousel">
+      <div className="carrousel__wrapper" ref={carrouselWrapper}>
         <Review />
         <Review />
         <Review />
       </div>
 
-      <ul className="puntos">
-        {listaBotonesSlider.map(({ id, active }) => <BtnReview key={id} id={id} active={active} handleBtnSlider={handleBtnSlider} />)}
+      <ul className="carrousel__buttons">
+        {listBtns.map(({ id, active }) => <BtnReview key={id} id={id} active={active} handleBtnSlider={handleBtnSlider} />)}
       </ul>
-    </div>
+    </section>
   )
 }
 

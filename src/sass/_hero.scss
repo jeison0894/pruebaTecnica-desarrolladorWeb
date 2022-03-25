@@ -1,19 +1,20 @@
 .slider {
   overflow: hidden;
-  .wrapper {
+
+  &__wrapper {
     display: flex;
     width: 400%;
     height: 45vw;
-    animation: heroRotatorio 20s infinite alternate;
-
-    img {
-      object-fit: cover;
-      object-position: center;
-      width: 100%;
-    }
+    animation: rotaryHero 20s infinite alternate;
   }
 
-  @keyframes heroRotatorio {
+  &__img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+
+  @keyframes rotaryHero {
     0% {
       margin-left: 0%;
     }

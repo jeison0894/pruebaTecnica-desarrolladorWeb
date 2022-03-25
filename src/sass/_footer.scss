@@ -1,10 +1,10 @@
-footer {
+.footer {
   background-color: #265e6c;
   padding: 4rem 3rem;
   text-align: center;
   color: #fff;
 
-  p {
+  &__text {
     margin-top: 2rem;
     @include text(14px, 20px);
   }

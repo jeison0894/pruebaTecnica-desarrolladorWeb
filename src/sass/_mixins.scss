@@ -13,6 +13,14 @@
   letter-spacing: 0.02em;
 }
 
+@mixin inputStyles($spacing, $BorderColor: 0, $BorderRadius: 0) {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing;
+  border: 1px solid $BorderColor;
+  border-radius: $BorderRadius;
+}
+
 @mixin button($bgColor) {
   width: 100%;
   border: none;

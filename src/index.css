@@ -24,6 +24,12 @@ body {
   margin: 0;
 }
 
+/* Remove border and padding of dialog tag form modals */
+dialog {
+  border: none;
+  padding: 0;
+}
+
 /**
  * Render the `main` element consistently in IE.
  */

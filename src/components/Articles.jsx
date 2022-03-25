@@ -2,7 +2,7 @@ import Article from "./Article"
 
 const Articles = () => {
   return (
-    <section className="articlesSection">
+    <section className="articles-group">
       <Article />
       <Article />
       <Article />

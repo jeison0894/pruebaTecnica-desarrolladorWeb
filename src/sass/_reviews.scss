@@ -2,21 +2,21 @@
   width: 100%;
   overflow: hidden;
 
-  .wrapper {
+  &__wrapper {
     width: 300%;
     display: flex;
     transition: all 0.5s ease;
     transform: translateX(0%);
   }
 
-  .puntos {
+  &__buttons {
     padding: 0;
     display: flex;
     justify-content: center;
     list-style: none;
   }
 
-  .punto {
+  &__button {
     width: 0.7rem;
     height: 0.7rem;
     border-radius: 50%;
@@ -24,8 +24,27 @@
     margin: 1rem;
     cursor: pointer;
 
-    &.active {
+    &--active {
       background-color: rgb(88, 88, 88);
     }
   }
 }
+
+
+.carrousel-review {
+  width: calc(100% / 3);
+  padding: 4rem 0;
+  text-align: center;
+
+  &__blockquote {
+    @include text(16px, 32px);
+    margin-bottom: 2rem;
+  }
+
+  &__cite {
+    @include text(16px);
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+

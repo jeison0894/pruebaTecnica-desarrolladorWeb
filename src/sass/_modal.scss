@@ -1,4 +1,25 @@
-.modalContainer {
+// -----> Newsletter <-----
+
+.newsletter {
+  display: grid;
+  place-content: center;
+  padding: 4rem 2rem;
+  background-color: #edf3fc;
+  text-align: center;
+
+  &__text {
+    @include text(14px, 24px);
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    @include button(#b378ff);
+  }
+}
+
+// -----> Modal <-----
+
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -9,7 +30,7 @@
   background: rgba(0, 0, 0, 0.5);
   place-content: center;
 
-  article {
+  &__info {
     display: grid;
     gap: 1px;
     position: relative;
@@ -17,47 +38,32 @@
     background-color: #fff;
     width: 70%;
     margin: auto;
+  }
 
-    svg {
-      position: absolute;
-      width: 1rem;
-      top: 10px;
-      right: 10px;
-      cursor: pointer;
-    }
+  &__closeIcon {
+    position: absolute;
+    width: 1rem;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
 
-    h3 {
-      margin: 0;
-      @include heading-H2(22px, 26.4px);
-    }
+  &__title {
+    margin: 0;
+    @include heading-H2(22px, 26.4px);
+  }
 
-    p {
-      @include text(16px, 32px);
-    }
+  &__text {
+    @include text(16px, 32px);
+  }
 
-    button {
-      @include button(#b378ff);
-    }
+  &__button {
+    @include button(#b378ff);
   }
 }
+
+// -----> Modal active <-----
 
 .openModal {
   display: grid;
-}
-
-.modalBtnContainer {
-  display: grid;
-  place-content: center;
-  padding: 4rem 2rem;
-  background-color: #dfe6f1;
-  text-align: center;
-
-  p {
-    @include text(14px, 24px);
-    margin-bottom: 2rem;
-  }
-
-  button {
-    @include button(#b378ff);
-  }
 }

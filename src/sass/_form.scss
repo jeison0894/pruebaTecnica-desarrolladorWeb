@@ -1,29 +1,21 @@
-@mixin flex($spacing, $BorderColor: 0, $BorderRadius: 0) {
-  display: flex;
-  flex-direction: column;
-  gap: $spacing;
-  border: 1px solid $BorderColor;
-  border-radius: $BorderRadius;
-}
-
 .form {
-  @include flex(2rem, #696969);
+  @include inputStyles(2rem, #696969);
   padding: 1.5rem;
 
-  .formGroup {
-    @include flex(1rem);
+  &__group {
+    @include inputStyles(1rem);
   }
 
-  .input {
+  &__input {
     padding: 1rem;
-    @include flex(1.5rem, #cacaca, 4px);
+    @include inputStyles(1.5rem, #cacaca, 4px);
 
-    &.select {
-      @include flex(1.5rem, #696969, 4px);
+    &--select {
+      @include inputStyles(1.5rem, #696969, 4px);
     }
   }
 
-  button {
+  &__button {
     @include button(#f778b9);
   }
 }
