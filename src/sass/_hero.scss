@@ -1,5 +1,6 @@
 .slider {
   overflow: hidden;
+  @include borderTop(8px);
 
   &__wrapper {
     display: flex;
@@ -13,7 +14,7 @@
     @include medium {
       height: 30vw;
     }
-     @include large {
+    @include large {
       height: 25vw;
     }
   }

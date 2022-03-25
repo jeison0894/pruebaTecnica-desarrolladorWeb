@@ -1,5 +1,6 @@
 .articles-group {
   display: flex;
+  justify-content: space-between;
   scroll-snap-type: x mandatory;
   overflow-x: auto;
   gap: 10px;
@@ -9,6 +10,7 @@
     scroll-snap-align: center;
 
     &__img {
+      @include borderTop(5px);
       width: 250px;
     }
 

@@ -21,11 +21,16 @@
   border-radius: $BorderRadius;
 }
 
+@mixin borderTop($num) {
+  border-radius: #{$num} #{$num} 0px 0px;
+}
+
 @mixin button($bgColor) {
   width: 100%;
   border: none;
   padding: 1rem;
   background-color: $bgColor;
+  border-radius: 5px;
   color: white;
   font-weight: 800;
   cursor: pointer;

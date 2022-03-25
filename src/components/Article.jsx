@@ -8,6 +8,7 @@ const Article = () => {
       <h2>¿Qué sería de nuestro mundo sin arte ni cultura?</h2>
     </article>
 
+
   )
 }
 
