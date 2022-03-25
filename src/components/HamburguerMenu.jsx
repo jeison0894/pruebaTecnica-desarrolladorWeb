@@ -6,16 +6,22 @@ const HamburguerMenu = () => {
   const { openMenu } = useContext(AppContext)
 
   return (
-    <nav className={`hamburguerMenu ${openMenu && "menuIsOpen"}`}>
-      <input type="search" name="search" placeholder='Busca artículos, noticias, enfermedades, etc…' />
+    <>
+      <div className={`hamburguerBackground ${openMenu && "menuIsOpen"}`}>
+        <nav className="hamburguerMenu">
+          <input type="search" name="search" placeholder='Busca artículos, noticias, enfermedades, etc…' />
 
-      <div className='menuContainer'>
-        <Menu />
-        <Menu />
-        <Menu />
-        <Menu />
+          <div className='menuContainer'>
+            <Menu />
+            <Menu />
+            <Menu />
+            <Menu />
+            <Menu />
+            <Menu />
+          </div>
+        </nav>
       </div>
-    </nav>
+    </>
   )
 }
 
