@@ -7,20 +7,19 @@ const HamburguerMenu = () => {
 
   return (
     <>
-      <div className={`hamburguerBackground ${openMenu && "menuIsOpen"}`}>
-        <nav className="hamburguerMenu">
-          <input type="search" name="search" placeholder='Busca artículos, noticias, enfermedades, etc…' />
+      <section className={`main-nav ${openMenu && "main-nav--isOpen"}`}>
+        <nav className="main-nav__wrapper">
+          <input className="main-nav__inputSearch" type="search" name="search" placeholder='Busca artículos, noticias, enfermedades, etc…' />
 
-          <div className='menuContainer'>
-            <Menu />
-            <Menu />
-            <Menu />
-            <Menu />
-            <Menu />
-            <Menu />
-          </div>
+          <Menu />
+          <Menu />
+          <Menu />
+          <Menu />
+          <Menu />
+          <Menu />
         </nav>
-      </div>
+
+      </section>
     </>
   )
 }

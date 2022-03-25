@@ -1,13 +1,13 @@
 
 const Menu = () => {
   return (
-    <nav className="navMenu" >
-      <h3>Embarazo</h3>
+    <nav className="main-nav__item" >
+      <h3 className="main-nav__title">Embarazo</h3>
 
-      <div>
-        <a href="#">Quiero ser mamá</a>
-        <a href="#">Voy a ser mamá</a>
-        <a href="#">Sobre el parto</a>
+      <div className="main-nav__wrapperLinks">
+        <a className="main-nav__link" href="#">Quiero ser mamá</a>
+        <a className="main-nav__link" href="#">Voy a ser mamá</a>
+        <a className="main-nav__link" href="#">Sobre el parto</a>
       </div>
     </nav>
   )
