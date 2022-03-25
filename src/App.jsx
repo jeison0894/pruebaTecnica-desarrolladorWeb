@@ -8,20 +8,22 @@ import Footer from "./components/Footer"
 import Reviews from "./components/reviews/Reviews"
 import HamburguerMenu from "./components/HamburguerMenu"
 import Modal from "./components/Modal"
+import Newsletter from "./components/Newsletter"
 
 const App = () => {
   return (
     <>
-      {/* <Header />
+      <Header />
       <HamburguerMenu />
       <main>
         <Hero />
         <Articles />
         <Form />
         <FAQ />
+        <Newsletter />
         <Reviews />
       </main>
-      <Footer /> */}
+      <Footer />
       <Modal />
     </>
   )

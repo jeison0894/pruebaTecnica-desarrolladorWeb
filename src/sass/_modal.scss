@@ -1,4 +1,8 @@
 .modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
   display: none;
   width: 100vw;
   height: 100vh;
@@ -39,4 +43,21 @@
 
 .openModal {
   display: grid;
+}
+
+.modalBtnContainer {
+  display: grid;
+  place-content: center;
+  padding: 4rem 2rem;
+  background-color: #dfe6f1;
+  text-align: center;
+
+  p {
+    @include text(14px, 24px);
+    margin-bottom: 2rem;
+  }
+
+  button {
+    @include button(#b378ff);
+  }
 }

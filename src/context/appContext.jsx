@@ -13,6 +13,8 @@ const AppProvider = ({ children }) => {
 
   const handleModal = (isOpen) => {
     setOpenModal(isOpen)
+    document.body.style.overflow = `${isOpen ? "hidden" : ""}`
+
   }
 
   const data = { openMenu, handleOpenMenu, openModal, handleModal }
