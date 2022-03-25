@@ -16,7 +16,7 @@ const Form = () => {
       </div>
 
       <div className="form__group">
-        <label htmlFor="select">Selecciona una opcion</label>
+        <label htmlFor="select">Selecciona una opción</label>
         <select className="form__input form__input--select" name="select" id="select">
           <option>Opcion 1</option>
           <option>Opcion 2</option>
