@@ -7,7 +7,7 @@
   height: calc(100vh - 4rem);
   background-color: #fff;
   overflow: auto;
-  z-index: 99;
+  z-index: 50;
   width: 100%;
 
   .hamburguerMenu {
@@ -36,7 +36,7 @@
 
 .menuIsOpen {
   display: block;
-  animation: fade 0.5s;
+  animation: fade 0.7s ease;
 }
 
 @keyframes fade {
