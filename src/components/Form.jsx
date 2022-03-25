@@ -2,7 +2,8 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    alert(`Enviaste satisfactoriamente los siguientes datos:\n Correo: ${e.target.correo.value}\n Opcion: ${e.target.select.value}`)
+    alert(`Enviaste satisfactoriamente los siguientes datos:\n Correo: ${e.target.email.value}\n Opcion: ${e.target.select.value}`)
+    e.target.email.value = ""
   }
 
   return (
@@ -10,16 +11,16 @@ const Form = () => {
       <h2>Formulario de contacto</h2>
 
       <div className="form__group">
-        <label htmlFor="correo">Ingresa tu correo</label>
-        <input className="form__input" type="text" placeholder="Ingresa tu correo" name="correo" />
+        <label htmlFor="email">Ingresa tu correo</label>
+        <input className="form__input" type="email" placeholder="Ingresa tu correo" name="email" />
       </div>
 
       <div className="form__group">
         <label htmlFor="select">Selecciona una opcion</label>
         <select className="form__input form__input--select" name="select" id="select">
-          <option >Opcion 1</option>
-          <option >Opcion 2</option>
-          <option >Opcion 3</option>
+          <option>Opcion 1</option>
+          <option>Opcion 2</option>
+          <option>Opcion 3</option>
         </select>
       </div>
 

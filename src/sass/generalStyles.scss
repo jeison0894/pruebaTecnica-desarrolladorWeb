@@ -7,7 +7,7 @@
 @import "./FAQ";
 @import "./reviews";
 @import "./footer";
-@import "./modal";
+@import "./modal&newsletter";
 
 body {
   margin: auto;
@@ -15,6 +15,7 @@ body {
 }
 
 main {
+  max-width: 1044px;
   display: flex;
   flex-direction: column;
   gap: 3.125rem;
@@ -25,4 +26,11 @@ main {
 h2,
 summary {
   @include heading-H2(22px, 26px);
+}
+
+.form-FAQ-row {
+  @include medium {
+    display: flex;
+    gap: 3rem;
+  }
 }

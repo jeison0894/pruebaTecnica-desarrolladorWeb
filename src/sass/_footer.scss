@@ -1,4 +1,8 @@
 .footer {
+  &__container {
+    max-width: 1044px;
+    margin: auto;
+  }
   background-color: #265e6c;
   padding: 4rem 3rem;
   text-align: center;

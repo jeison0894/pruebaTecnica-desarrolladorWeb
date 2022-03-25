@@ -6,6 +6,16 @@
     width: 400%;
     height: 45vw;
     animation: rotaryHero 20s infinite alternate;
+
+    @include small {
+      height: 35vw;
+    }
+    @include medium {
+      height: 30vw;
+    }
+     @include large {
+      height: 25vw;
+    }
   }
 
   &__img {

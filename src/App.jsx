@@ -18,8 +18,10 @@ const App = () => {
       <main>
         <Hero />
         <Articles />
-        <Form />
-        <FAQ />
+        <div className="form-FAQ-row">
+          <Form />
+          <FAQ />
+        </div>
         <Newsletter />
         <Reviews />
       </main>

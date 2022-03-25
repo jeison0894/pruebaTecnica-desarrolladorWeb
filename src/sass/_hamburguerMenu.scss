@@ -4,16 +4,21 @@
   top: 4rem;
   left: 0;
   right: 0;
+  width: 100%;
+  max-width: 1044px;
   height: calc(100vh - 4rem);
-  background-color: #fff;
+  margin: auto;
+  padding-bottom: 2rem;
   overflow: auto;
   z-index: 50;
-  width: 100%;
 
   &__wrapper {
     padding-top: 1rem;
     width: 90%;
     margin: auto;
+    @include xl {
+      width: 100%;
+    }
   }
 
   &__inputSearch {
@@ -23,8 +28,23 @@
     width: 100%;
   }
 
+  &__menus-container {
+    margin-bottom: 2rem;
+    @include medium {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+      row-gap: 2rem;
+    }
+  }
+
   &__item {
     width: 100%;
+    @include medium {
+      width: 48%;
+    }
   }
 
   &__title {

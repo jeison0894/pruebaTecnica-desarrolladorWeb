@@ -1,13 +1,19 @@
-.nav {
-  position: sticky;
-  z-index: 100;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  height: 2rem;
-  padding: 1rem;
+.header {
   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+
+  &__nav {
+    width: 90%;
+    max-width: 1044px;
+    margin: auto;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    padding: 1rem;
+  }
 
   &__icon-cursorPointer {
     cursor: pointer;

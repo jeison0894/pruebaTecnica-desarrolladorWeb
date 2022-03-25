@@ -35,3 +35,29 @@
     transition: 0.4s ease;
   }
 }
+
+// -----> Media queries <------
+
+@mixin small {
+  @media only screen and (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media only screen and (min-width: 1280px) {
+    @content;
+  }
+}

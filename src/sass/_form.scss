@@ -1,4 +1,7 @@
 .form {
+  margin: auto;
+  margin-bottom: 3.125rem;
+  justify-content: center;
   @include inputStyles(2rem, #696969);
   padding: 1.5rem;
 
@@ -17,5 +20,10 @@
 
   &__button {
     @include button(#f778b9);
+  }
+
+  @include medium {
+    width: 50%;
+    margin-bottom: 0;
   }
 }
