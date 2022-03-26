@@ -1,9 +1,6 @@
 import { useContext } from "react"
 import logoCompany from "../assets/img/logoCompany.svg"
 import AppContext from "../context/appContext"
-import MenuCloseIcon from "../assets/img/menu_close.svg"
-import MenuOpenIcon from "../assets/img/menu_open.svg"
-import searchIcon from "../assets/img/search.svg"
 
 const Header = () => {
   const { openMenu, handleOpenMenu } = useContext(AppContext)
@@ -11,9 +8,16 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="header__nav">
-        <button className="header__icon-cursorPointer" onClick={() => handleOpenMenu(!openMenu)}><img src={openMenu ? MenuCloseIcon : MenuOpenIcon} alt="" /></button>
+        <button className="header__icon" onClick={() => handleOpenMenu(!openMenu)}>{openMenu ? <span className="material-icons-round">
+          close
+        </span> : <span className="material-icons-round">
+          menu
+        </span>}</button>
         <img height="auto" src={logoCompany} alt="logo de la empresa" />
-        <button className="header__icon-cursorPointer" onClick={() => handleOpenMenu(!openMenu)}><img src={searchIcon} alt="" /></button>
+        <button className="header__icon" onClick={() => handleOpenMenu(!openMenu)}>
+          <span className="material-icons-round">
+            search
+          </span></button>
       </nav>
     </header>
   )

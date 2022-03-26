@@ -7,16 +7,24 @@
     max-width: 1044px;
     margin: auto;
     position: sticky;
-    z-index: 100;
     top: 0;
     display: flex;
     justify-content: space-between;
     height: 2rem;
     padding: 1rem;
+    z-index: 1000;
   }
 
-  &__icon-cursorPointer {
+  &__icon {
     border: none;
     cursor: pointer;
+
+    &:hover {
+      color: gray;
+    }
   }
+}
+
+.material-icons-round {
+  font-size: 35px;
 }
