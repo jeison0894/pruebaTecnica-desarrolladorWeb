@@ -1,5 +1,6 @@
-// -----> Newsletter <-----
+@use "variables";
 
+// -----> Newsletter <-----
 .newsletter {
   width: 100vw;
   position: relative;
@@ -22,7 +23,7 @@
   }
 
   &__button {
-    @include button(#b378ff);
+    @include button(variables.$purple500);
   }
 }
 
@@ -38,7 +39,7 @@
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   place-content: center;
-  
+
   &__info {
     max-width: 500px;
     display: grid;

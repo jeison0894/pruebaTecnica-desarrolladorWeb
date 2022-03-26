@@ -1,3 +1,5 @@
+// ---> Text Styles <---
+
 @mixin heading-H2($fontSize, $lineHeigth: 0, $color: 0, $fontWeight: 700) {
   font-weight: $fontWeight;
   font-size: $fontSize;
@@ -12,6 +14,8 @@
   line-height: $lineHeigth;
   letter-spacing: 0.02em;
 }
+
+// ---> Element Styles <---
 
 @mixin inputStyles($spacing, $BorderColor: 0, $BorderRadius: 0) {
   display: flex;

@@ -1,3 +1,5 @@
+@use "variables";
+
 .main-nav {
   display: none;
   position: sticky;
@@ -48,7 +50,7 @@
   }
 
   &__title {
-    @include heading-H2(24px, 32px, #486db7);
+    @include heading-H2(24px, 32px, variables.$indigo500);
     margin-bottom: 0.7rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid rgb(223, 223, 223);
