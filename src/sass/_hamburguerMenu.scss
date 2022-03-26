@@ -16,6 +16,8 @@
   background-color: #fff;
 
   &__wrapper {
+    position: relative;
+
     padding-top: 1rem;
     width: 90%;
     margin: auto;
@@ -25,10 +27,31 @@
   }
 
   &__inputSearch {
-    padding: 1rem;
-    border: 1px solid #cacaca;
-    border-radius: 4px;
     width: 100%;
+    border: 1px solid #cacaca;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+
+  &__buttonSearch {
+    position: absolute;
+    right: 6px;
+    top: 20px;
+    border: none;
+    background-color: variables.$indigo500;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
+
+  &__iconSearch {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    color: white;
+    background-color: variables.$indigo500;
   }
 
   &__menus-container {
