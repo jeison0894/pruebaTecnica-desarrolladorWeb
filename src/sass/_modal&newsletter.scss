@@ -77,4 +77,14 @@
 
 .openModal {
   display: grid;
+  animation: fade 0.4s ease;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
