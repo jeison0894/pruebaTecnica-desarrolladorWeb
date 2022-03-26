@@ -17,6 +17,7 @@
 
   &__icon {
     border: none;
+    background-color: white;
     cursor: pointer;
 
     &:hover {
@@ -27,4 +28,5 @@
 
 .material-icons-round {
   font-size: 35px;
+  background-color: white;
 }
