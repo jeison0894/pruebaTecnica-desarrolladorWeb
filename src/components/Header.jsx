@@ -1,8 +1,9 @@
 import { useContext } from "react"
 import logoCompany from "../assets/img/logoCompany.svg"
 import AppContext from "../context/appContext"
-import MenuCloseIcon from "./MenuCloseIcon"
-import MenuOpenIcon from "./MenuOpenIcon"
+import MenuCloseIcon from "../assets/img/menu_close.svg"
+import MenuOpenIcon from "../assets/img/menu_open.svg"
+import searchIcon from "../assets/img/search.svg"
 
 const Header = () => {
   const { openMenu, handleOpenMenu } = useContext(AppContext)
@@ -10,15 +11,10 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="header__nav">
-        {openMenu ? <MenuCloseIcon /> : < MenuOpenIcon />}
-
+        <button className="header__icon-cursorPointer" onClick={() => handleOpenMenu(!openMenu)}><img src={openMenu ? MenuCloseIcon : MenuOpenIcon} alt="" /></button>
         <img height="auto" src={logoCompany} alt="logo de la empresa" />
-
-        <svg onClick={() => handleOpenMenu(true)} className="header__icon-cursorPointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-        </svg>
+        <button className="header__icon-cursorPointer" onClick={() => handleOpenMenu(!openMenu)}><img src={searchIcon} alt="" /></button>
       </nav>
-
     </header>
   )
 }

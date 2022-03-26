@@ -16,10 +16,7 @@
   }
 
   &__icon-cursorPointer {
+    border: none;
     cursor: pointer;
-
-    &:hover {
-      stroke: gray;
-    }
   }
 }
